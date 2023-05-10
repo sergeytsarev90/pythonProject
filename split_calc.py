@@ -6,7 +6,7 @@ class SplitForCalc(Calculator):
     def __init__(self, s):
         self.s = s
 
-    const = 'Привет'
+    const = 'Bongur'
 
     def make_calc(self):
         s = self.s.split()
@@ -14,10 +14,9 @@ class SplitForCalc(Calculator):
             print(self.const)
             return self.adding(int(s[0]), int(s[2]))
         elif s[1] == '/':
-            return self.division(int(s[0]), int(s[2]))
         else:
-            print('Это не арифмткое выражение')
-            return 'Это арифметичесткое выражение'
+            print('Это выражение')
+            return 'Это not арифметичесткое выражение'
 
 
 c = Calculator(int(s[0]), int(s[2]))

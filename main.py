@@ -8,7 +8,10 @@ class Calculator:
         try:
             return a / b
         except ZeroDivisionError:
-            print('Деление на ноль запрещено ')
+            print('Деление запрещено ')
+            print('division excepted ')
+            print('Деление запрещено ')
+
             return 'На ноль делить нельзя '
         except ValueError:
             print('Не верные данные')
