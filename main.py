@@ -7,6 +7,7 @@ class Calculator:
         try:
             return a / b
         except ZeroDivisionError:
+            print('На ноль делить нельзя ')
             return 'На ноль делить нельзя '
         except ValueError:
             print('Не корректные данные')
