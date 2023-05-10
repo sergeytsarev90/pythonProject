@@ -1,15 +1,16 @@
 class Calculator:
 
-    def adding(self, a, b):
-        return a + b
+    def adding(self, q, w):
+        print('Сложение')
+        return q + w
 
     def division(self, a, b):
         try:
             return a / b
         except ZeroDivisionError:
-            print('На ноль делить нельзя ')
+            print('Деление на ноль запрещено ')
             return 'На ноль делить нельзя '
         except ValueError:
-            print('Не корректные данные')
+            print('Не верные данные')
         except TypeError as e:
             return e
